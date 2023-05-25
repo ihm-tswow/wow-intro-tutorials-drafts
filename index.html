@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting</title>
+    <script>
+        window.onload = function () {
+            const destination = window.location.href;
+            if (window.location.href.includes("nvuillam.github.io/mega-linter")) {
+                const redirectLocation = window.location.href.replace(
+                    "ihm-tswow.github.io/wow-intro-tutorial-drafts",
+                    "wotlkdev.github.io/wiki"
+                );
+                document.getElementById("body").innerHTML = "<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+        }
+    </script>
+</head>
+</html>
